@@ -1,0 +1,7 @@
+{
+    "host": "smtp.hostinger.com.br",
+    "port": 587,
+    "secure": false,
+    "user": "gastromind@gfrancodev.tech",
+    "pass": "iFood@122"
+}
