@@ -118,4 +118,4 @@ const EstabelecimentoSchema = new Schema({
 })
 
 const Estabelecimento = mongoose.model("estabelecimento", EstabelecimentoSchema)
-model.exports = Estabelecimento
+module.exports = Estabelecimento

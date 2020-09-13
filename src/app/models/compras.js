@@ -32,4 +32,4 @@ const ComprasSchema = new Schema({
 
 const Compras = mongoose.model('compras', ComprasSchema)
 
-model.exports = Compras
+module.exports = Compras

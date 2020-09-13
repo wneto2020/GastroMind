@@ -19,4 +19,4 @@ const EstoqueSchema = new Schema({
 
 const Estoque = mongoose.model('estoque', EstoqueSchema)
 
-model.exports = Estoque
+module.exports = Estoque

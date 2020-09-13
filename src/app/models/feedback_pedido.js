@@ -2,7 +2,7 @@ const mongoose = require('../../database/db')
 
 const Schema = mongoose.Schema
 
-const FeedbackEstabelecimentoSchema = new Schema({
+const FeedbackPedidoSchema = new Schema({
     estabelecimentoID: {
         type: String,
         required: true
@@ -10,10 +10,6 @@ const FeedbackEstabelecimentoSchema = new Schema({
     clienteID: {
         type: String,
         required: true
-    },
-    cadeiraID: {
-        type: Number,
-        
     },
     comentario: {
         type: String,
@@ -28,5 +24,5 @@ const FeedbackEstabelecimentoSchema = new Schema({
     }
 })
 
-const FeedbackEstabelecimento = mongoose.model('feedback_estabelecimento', FeedbackEstabelecimentoSchema)
-module.exports = FeedbackEstabelecimento
+const FeedbackPedido = mongoose.model("feedback_pedido", FeedbackPedidoSchema)
+module.exports = FeedbackPedido

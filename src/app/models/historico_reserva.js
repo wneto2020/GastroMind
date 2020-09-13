@@ -31,4 +31,4 @@ const HistoricoReservaSchema = new Schema ({
 
 const HistoricoReserva = mongoose.model('historicoreserva', HistoricoReservaSchema)
 
-model.exports = HistoricoReserva
+module.exports = HistoricoReserva

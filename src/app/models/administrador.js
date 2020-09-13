@@ -33,4 +33,4 @@ const AdministradorSchema = new Schema({
 })
 
 const Administrador = mongoose.model('administrador', AdministradorSchema)
-model.exports = Administrador
+module.exports = Administrador

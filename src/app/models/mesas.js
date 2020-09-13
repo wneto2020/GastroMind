@@ -20,3 +20,6 @@ const MesasSchema = new Schema({
         required: true
     }
 })
+
+const Mesa = mongoose.model('mesa', MesasSchema)
+module.exports = Mesa

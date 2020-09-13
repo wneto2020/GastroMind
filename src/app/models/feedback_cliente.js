@@ -31,6 +31,6 @@ const FeedbackClienteSchema = new Schema({
 
 
 
-const FeedbackCliente = mongoose.model('feedbackcliente', FeedbackClienteSchema)
+const FeedbackCliente = mongoose.model('feedback_cliente', FeedbackClienteSchema)
 
-model.exports = FeedbackCliente
+module.exports = FeedbackCliente

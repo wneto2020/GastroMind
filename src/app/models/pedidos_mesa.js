@@ -35,4 +35,4 @@ const PedidosMesaSchema = new Schema({
 
 const PedidosMesa = mongoose.model('pedidosmesa', PedidosMesaSchema)
 
-model.exports = PedidosMesa
+module.exports = PedidosMesa
