@@ -21,4 +21,10 @@ App Teste - Entrar na Mesa por QrCode Mit APP - Android - GastroMind.apk
 
 Teste o App apontando para este QrCode
 
-<img src="https://www.invertexto.com/barcodes/5f5fdc94c76a0.png" width="100%"> 
+<img src="https://www.invertexto.com/barcodes/5f5fdc94c76a0.png" width="50%">
+
+
+Para ver uma previa da interface do usuario:
+Descompacte o arquivo: Hackaton(3).rar
+
+E abra o arquivo: index.html em seu navegador
