@@ -18,6 +18,8 @@ url: http://localhost:3000/business/home
 
 
 App Teste - Entrar na Mesa por QrCode Mit APP - Android - GastroMind.apk
+Instale o app https://play.google.com/store/apps/details?id=com.google.zxing.client.android&hl=pt_BR 
+para o leitor de QrCode do App funcionar!!!!!!
 
 Teste o App apontando para este QrCode
 
