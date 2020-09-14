@@ -19,6 +19,6 @@ url: http://localhost:3000/business/home
 
 App Teste - Entrar na Mesa por QrCode Mit APP - Android - GastroMind.apk
 
-Teste o App apontando para reste QrCode
+Teste o App apontando para este QrCode
 
 <img src="https://www.invertexto.com/barcodes/5f5fdc94c76a0.png" width="100%"> 
