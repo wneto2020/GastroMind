@@ -1,0 +1,80 @@
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-1 text-gray-800">Instagram</h1>
+          <p class="bg-danger text-white rounded p-1">O perfil do restaurante debe está publico</p>
+          <p class="mb-4">Vincule seu instagram e importe todo o contéudo do seu Feed e Status para o Mural. Teste Agora!</p>
+        
+        <form  id="mural"action="">
+            
+            <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="username" id="username" aria-label="username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="submit">Vincular</button>
+  </div>
+</div>
+
+        </form>
+
+          <!-- Content Row -->
+          <div class="row">
+
+            <!-- Border Left Utilities -->
+            <div class="col-lg-6" id="stories">
+                <h3 class="text-center">STORIES</h3>
+  
+         <iframe src="/business/insta/stories" width="100%" height="500px"  frameborder="0">
+
+
+                    </iframe>
+  
+
+            </div>
+
+            <!-- Border Bottom Utilities -->
+            <div class="col-lg-6">
+
+                <h3 class="text-center">FEED</h3>
+
+                    <iframe src="/business/insta/posts" width="100%" height="500px"  frameborder="0">
+
+
+                    </iframe>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+<script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+<script>
+
+    $(document).ready(function(){
+
+        $('#mural').submit(function(){
+
+            $.ajax({
+                url: '/business/instagram/' + $('#username').val(),
+                method: 'get',
+                success: function (response) {
+                var resposta = confirm('Seus intagram está sendo vinculado, aguarde uns instantes...')
+
+                if(resposta == true)
+                        Location.reload()
+
+                }
+            })
+
+        })
+
+
+
+
+    })
+
+</script>

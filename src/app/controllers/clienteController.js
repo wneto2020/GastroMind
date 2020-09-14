@@ -12,6 +12,8 @@ const Mesa = require('../models/mesas')
 
 const HistoricoReserva = require('../models/historico_reserva')
 
+const qrCode = require('../modules/qrcode')
+
 router.use(authMiddleware)
 router.use(cookieParser()) 
 
@@ -22,7 +24,7 @@ router.post('/reservar_mesa', async (req, res) => {
 
         const reserva = await HistoricoReserva.create(req.body )
 
-        res.send({ reserva })
+        res.send({ reserva, qrCode: qrCode('https://www.gastromind.com/mesa/' + reserva.id)})
 
     } catch (err) {
         res.status(400).send({ error: 'Falha ao reservar mesa.' })
@@ -95,4 +97,6 @@ router.post('/remover_produto_cesta', async (req, res) => {
 })
 
 
-module.exports = app => app.use('/user/', router)
+
+
+module.exports = app => app.use('/user', router)

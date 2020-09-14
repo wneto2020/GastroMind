@@ -1,0 +1,145 @@
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-2 text-gray-800">Reservas</h1>
+          <p class="mb-4">Gerencimaneto de Mesas.   <button class="btn btn-sm btn-primary d-flex-inline">+ Mesas</button></p>
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <div class="bg-light rounded justify-content-start d-flex align-items-center p-1">
+
+                     <a href="#" class="btn btn-sm btn-info m-2"><i class="fad fa-broom"></i> Limpar mesa</a>
+                      <a href="#" class="btn btn-sm btn-danger m-2"><i class="fas fa-trash-alt"></i> Deletar mesa</a>
+                      <a href="#" class="btn btn-sm btn-warning m-2"><i class="fas fa-minus-circle"></i> Bloquear mesa</a>
+                      <a href="#" class="btn btn-sm btn-success m-2"><i class="fas fa-check-circle"></i> Fianlizar mesa</a>
+                </div>
+            </div>
+            <div class="card-body">
+
+
+                <div class="row">
+                <div class="col-lg-2 mb-4">
+                  <div class="card bg-primary text-white shadow">
+                    <div class="card-body">
+                      Mesa 1
+                      <div class="text-white-50 small">Reservada</div>
+
+                  <div class="bg-light  rounded justify-content-center d-flex align-items-center p-1 shadow">
+
+                     <a href="#" class="btn btn-sm btn-info"><i class="fad fa-broom"></i></a>
+                      <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
+                      <a href="#" class="btn btn-sm btn-warning"><i class="fas fa-minus-circle"></i></a>
+                      <a href="#" class="btn btn-sm btn-success"><i class="fas fa-check-circle"></i></a>
+                </div>
+
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                  <div class="card bg-success text-white shadow">
+                    <div class="card-body">
+                      Mesa 2
+                      <div class="text-white-50 small">Reserva em andamento</div>
+
+
+                  <div class="bg-light rounded justify-content-center d-flex align-items-center p-1 shadown">
+
+                     <a href="#" class="btn btn-sm btn-info"><i class="fad fa-broom"></i></a>
+                      <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
+                      <a href="#" class="btn btn-sm btn-warning"><i class="fas fa-minus-circle"></i></a>
+                      <a href="#" class="btn btn-sm btn-success"><i class="fas fa-check-circle"></i></a>
+                </div>
+
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                  <div class="card bg-info text-white shadow">
+                    <div class="card-body">
+                      Mesa 3
+                      <div class="text-white-50 small">Em processo de limpeza</div>
+
+                  <div class="bg-light rounded justify-content-center d-flex align-items-center p-1 shadow">
+
+                     <a href="#" class="btn btn-sm btn-info"><i class="fad fa-broom"></i></a>
+                      <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
+                      <a href="#" class="btn btn-sm btn-warning"><i class="fas fa-minus-circle"></i></a>
+                      <a href="#" class="btn btn-sm btn-success"><i class="fas fa-check-circle"></i></a>
+                </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+              <div class="col-lg-2 mb-4">
+                <div class="card bg-dark text-white shadow">
+                  <div class="card-body">
+                      Mesa 4
+                      <div class="text-white-50 small">Mesa disponivel</div>
+
+                  <div class="bg-light rounded justify-content-center d-flex align-items-center p-1 shadow">
+
+                     <a href="#" class="btn btn-sm btn-info"><i class="fad fa-broom"></i></a>
+                      <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
+                      <a href="#" class="btn btn-sm btn-warning"><i class="fas fa-minus-circle"></i></a>
+                      <a href="#" class="btn btn-sm btn-success"><i class="fas fa-check-circle"></i></a>
+                </div>
+                
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+
+          <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header boder-0">
+          <h5 class="modal-title" id="exampleModalLabel">Cadastrar Mesas</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+            <form action="/business/mesas_inserir">
+
+                <div class="form-group">
+                    <label for="">Qunatidade de mesas:</label>
+                    <input type="tel" class="form-control" name="qtd">
+                </div>
+
+            <div class="form-group">
+                <label>Ativar modo pandemia?</label>
+                <p>O modo pandemia sugere a quantidade de mesas adequadas pro restaurante está operando.</p>
+            <select class="form-control" name="modo">
+                <option value="1">Ativado</option>
+                <option value="2">Desativado</option>
+                </select>
+            </div>
+
+
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Adicionar </button>
+        </div>
+
+            </form>
+        </div>
+        <div class="modal-footer border-0">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
